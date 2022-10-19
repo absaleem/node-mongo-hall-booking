@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "a76a5389-e0ee-4fbd-8123-d572a1a4386d",
+		"name": "Nodejs Hall booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/hallbooking/createRoombooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"room_id\": 5,\r\n    \"customer_name\": \"praveen\",\r\n    \"booked_date\": \"2022-10-28\",\r\n    \"start_time\": \"09:00 am\",\r\n    \"end_time\": \"05:00 pm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/hallbooking/createRoombooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"hallbooking",
+						"createRoombooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/hallbooking/createRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Room 6\",\r\n    \"no_of_seats\":2,\r\n    \"amenities\":[\"2 fan\",\"2 bed cart \",\"1 attached bathroom\",\"tv\"],\r\n    \"price_hour\": \"200.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/hallbooking/createRoom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"hallbooking",
+						"createRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/hallbooking/listRooms",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/hallbooking/listRooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"hallbooking",
+						"listRooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/hallbooking/listRooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/hallbooking/listCustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"hallbooking",
+						"listCustomers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
