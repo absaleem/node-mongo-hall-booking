@@ -4,6 +4,7 @@
   "description": "hall booking app",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
     "test": "test"
   },
   "keywords": [
